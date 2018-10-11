@@ -1,0 +1,19 @@
+.form-control {
+  margin: 0px 0px;
+    padding: 5px;
+    min-height: 7rem;
+    width: 96%;
+    display: block;
+    margin: 0px auto;
+    resize: none;
+    overflow: hidden;
+}
+
+#OUTPUT {
+    height: auto;
+    word-wrap: break-word;
+}
+
+body {
+    background-image: url('../images/background.png');
+}
