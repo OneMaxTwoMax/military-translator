@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Sergei Yakzhyk</title>
+        <title>Military Translator</title>
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     </head>
     <body>
         <div class="container">
+            <header class="row">
+                <div class="col-sm-12 text-center">
+                    <h1>Military Translator</h1>
+                </div>
+            </header>
             <section class="row">
                 <form>
                     <div class="col-sm-6 text-center">
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Enter your regular text</label>
                             <textarea rows="4" class="form-control" id="INPUT" placeholder="Enter your text"></textarea>
                         </div>
                     </div>
                     <div class="col-sm-6 text-center name-box">
-                        <div id="OUTPUT" class="form-group">
+                        <div class="form-group">
+                            <textarea rows="4" class="form-control" id="OUTPUT" placeholder="Enter your text"></textarea>
                         </div>
                     </div>
                 </form>
             </section>
             <section class="row">
-                <div class="col-sm-12">
-                    <button id="SUBMIT" type="button" class="btn btn-primary">Translate</button>
+                <div class="col-sm-12 text-center">
+                    <button id="SUBMIT" type="button">Translate</button>
                 </div>
             </section>
         </div>
-        <script type="text/javascript" src="./assets/js/scripts.js"></script>
+        <script charset="utf-8" type="text/javascript" src="./assets/js/scripts.js"></script>
     </body>
 </html>

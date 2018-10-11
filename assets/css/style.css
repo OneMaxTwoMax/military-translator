@@ -1,19 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Black Ops One';
+}
+
+form {
+    padding-top: 2rem;
+}
+
+body {
+    background-image: url('../images/background.png');
+}
+
+button {
+    background: #c4b87c;
+    width: 16rem;
+    height: 5rem;
+    border: 0.3rem solid #64533a;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+button:hover {
+    background: #d8cc93;
+}
+
+button:active {
+    background: #aba174;
+}
+
+h1 {
+    color: #c4b87c;
+    margin: 1rem;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 3rem 3rem;
+}
+
 .form-control {
-  margin: 0px 0px;
+    margin: 0px 0px;
     padding: 5px;
-    min-height: 7rem;
+    min-height: 22rem;
     width: 96%;
     display: block;
     margin: 0px auto;
     resize: none;
     overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: 0.3rem solid #4f734b;
+    text-align: center;
+    font-size: 2rem;
 }
 
-#OUTPUT {
-    height: auto;
-    word-wrap: break-word;
-}
-
-body {
-    background-image: url('../images/background.png');
+.form-control:focus {
+    border: 0.2rem solid #c2b67a;
 }

@@ -1,41 +1,40 @@
-SUBMIT.addEventListener('click', (e) => {
-    OUTPUT.innerHTML = translator(INPUT.value);
-})
-
 function translator(text) {
-    let counter = 0;
-    let tempArr = [];
-    let arr = ["áëÿòü", "íàõóé", "áëÿòü", "íàõóé", "ïèçäåö áëÿòü!"];
-    text = text.split(".");
-    text.forEach((elem) => {
-        if (counter == 5) counter = 0;
-        elem = elem + " " + arr[counter];
-        if (counter < 4) elem += ".";
-        else elem += "!";
-        tempArr.push(elem);
-        counter++;
+	let counter = 1;
+	let tempArr = [];
+	let arr = ["Ð±Ð»ÑÑ‚ÑŒ","Ð½Ð°Ñ…ÑƒÐ¹","Ð±Ð»ÑÑ‚ÑŒ","Ð½Ð°Ñ…ÑƒÐ¹","ÐŸÐ¸Ð·Ð´ÐµÑ† Ð±Ð»ÑÑ‚ÑŒ!"];
+	text = text.split(".");
+	text.forEach((elem) => {
+		if(text.indexOf(elem) != text.indexOf(text[text.length - 1])) {
+			if(counter == 5) counter = 0;
+			elem = elem + " " + arr[counter];
+            if(counter < 4) elem += ".";
+            else elem += "!";
+            tempArr.push(elem);
+			counter++;
+        }
+		else tempArr.push(elem);
     });
-    text = tempArr.join("");
-    tempArr = [];
-    counter = 0;
-    text = text.split(",");
-    text.forEach((elem) => {
-        if (counter == 4) counter = 0;
-        tempArr.push(elem + " ," + arr[counter] + ",");
-        counter++;
+	text = tempArr.join("");
+	tempArr = [];
+	counter = 0;
+	text = text.split(",");
+	text.forEach((elem) => {
+		if(text.indexOf(elem) != text.indexOf(text[text.length - 1])) {
+			if(counter == 4) counter = 0;
+            tempArr.push(elem + ", " + arr[counter] + ",");
+            counter++;
+        }
+		else tempArr.push(elem);
     });
-    text = tempArr.join("");
-    return text;
+	text = tempArr.join("");
+	return text;
 }
 
-    INPUT.addEventListener('keyup', function () {
-        INPUT.style.overflow = 'hidden';
-        INPUT.style.height = INPUT.scrollHeight + 'px';
-    }, false);
+SUBMIT.addEventListener('click', (e) => {
+    OUTPUT.value = translator(INPUT.value);
+    OUTPUT.style.height = OUTPUT.scrollHeight + 'px';
+})
 
-    OUTPUT.addEventListener('keyup', function () {
-        OUTPUT.style.overflow = 'hidden';
-        OUTPUT.style.height = OUTPUT.scrollHeight + 'px';
-    }, false);
-
-
+INPUT.addEventListener('keyup', function () {
+    INPUT.style.height = INPUT.scrollHeight + 'px';
+}, false);
