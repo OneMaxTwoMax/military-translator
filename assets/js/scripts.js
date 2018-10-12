@@ -1,7 +1,7 @@
 function translator(text) {
 	let counter = 1;
 	let tempArr = [];
-	let arr = ["блять","нахуй","блять","нахуй","Пиздец блять!"];
+	let arr = ["блять","нахуй","блять","нахуй",", пиздец блять"];
 	text = text.split(".");
 	text.forEach((elem) => {
 		if(text.indexOf(elem) != text.indexOf(text[text.length - 1])) {

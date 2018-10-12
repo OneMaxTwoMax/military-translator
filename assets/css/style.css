@@ -21,6 +21,7 @@ button {
     font-weight: bold;
     font-size: 2rem;
     margin-bottom: 3rem;
+    outline: none;
 }
 
 button:hover {
@@ -53,8 +54,12 @@ header {
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     border: 0.3rem solid #4f734b;
-    text-align: center;
+    text-align: justify;
     font-size: 2rem;
+}
+
+.form-control[readonly] {
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .form-control:focus {
